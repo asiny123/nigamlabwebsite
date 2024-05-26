@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nigam Lab</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        section {
-            padding: 2rem;
-        }
-        .section-title {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        .team-member, .publication, .research-area {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        .image-placeholder {
-            width: 150px;
-            height: 150px;
-            background-color: #ddd;
-            margin-right: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="lab.css" />
 </head>
 <body>
 
@@ -42,6 +12,13 @@
     <h1>Nigam Lab</h1>
     <p>Researching ways to reduce inflammation in CPB patients</p>
 </header>
+
+<nav>
+    <a href="#about">About the Lab</a>
+    <a href="#team">Our Team</a>
+    <a href="#publications">Publications</a>
+    <a href="#research">Areas of Research</a>
+</nav>
 
 <section id="about">
     <h2 class="section-title">About the Lab</h2>
@@ -105,12 +82,11 @@
     <!-- Add more research areas as needed -->
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('Nigam Lab website is loaded');
-        // Add more JavaScript functionality as needed
-    });
-</script>
+<footer>
+    <p>&copy; 2024 Nigam Lab. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js" />
 
 </body>
 </html>
