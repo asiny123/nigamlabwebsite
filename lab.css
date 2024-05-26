@@ -5,8 +5,8 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-image: url(images/banner.webp);
+    color: black;
     text-align: center;
     padding: 1rem 0;
 }
