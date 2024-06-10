@@ -4,6 +4,38 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+}
+
+.banner-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: black; /* Adjust color as needed */
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    display: inline-block;
+}
+
 header {
     background-image: url(images/banner.webp);
     color: black;
@@ -57,8 +89,10 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 .image-placeholder img {
     width: 150px; /* Set the desired width */
     height: 150px; /* Set the desired height */
     border-radius: 50%; /* Make the image circular */
 }
+
