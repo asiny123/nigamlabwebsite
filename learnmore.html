@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Nigam Lab</title>
+    <title>Learn More / Contact Us - Nigam Lab</title>
     <link rel="stylesheet" href="lab.css">
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Nigam Lab</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="publications.html">Publications</a>
+            <a href="careers.html">Careers</a>
             <a href="learnmore.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to learn more about our work, please reach out to us.</p>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our work or collaborate, please reach out to us by filling out the form below.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Nigam Lab</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var mailtoLink = 'mailto:Anthony.Sinyagin@seattlechildrens.org?subject=Contact Form Submission&body=' 
+                             + 'Name: ' + name + '%0D%0A' 
+                             + 'Email: ' + email + '%0D%0A' 
+                             + 'Message: ' + message;
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 </html>
